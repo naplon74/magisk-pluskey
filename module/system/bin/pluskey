@@ -1,0 +1,36 @@
+#!/system/bin/sh
+# Choose what the Plus Key does.
+#   pluskey list | get | set <preset> | custom <command>
+MODDIR=${PLUSKEY_MODDIR:-/data/adb/modules/pluskey}
+CONF=${PLUSKEY_CONF:-/data/adb/pluskey}
+mkdir -p "$CONF"
+
+case "$1" in
+  list)
+    ls "$MODDIR/preset" | sed 's/\.sh$//'
+    echo custom
+    ;;
+  get)
+    cat "$CONF/choice" 2>/dev/null || echo assistant
+    ;;
+  set)
+    if [ -z "$2" ]; then echo "usage: pluskey set <preset>"; exit 1; fi
+    if [ "$2" = "custom" ]; then
+      [ -f "$CONF/custom.sh" ] || { echo "no custom command saved yet: pluskey custom <command>"; exit 1; }
+    elif [ ! -f "$MODDIR/preset/$2.sh" ]; then
+      echo "unknown preset: $2 (try: pluskey list)"; exit 1
+    fi
+    echo "$2" > "$CONF/choice"
+    echo "Plus Key action: $2"
+    ;;
+  custom)
+    shift
+    if [ -z "$*" ]; then echo "usage: pluskey custom <command>"; exit 1; fi
+    printf '%s\n' "$*" > "$CONF/custom.sh"
+    echo custom > "$CONF/choice"
+    echo "Plus Key action: custom ($*)"
+    ;;
+  *)
+    echo "usage: pluskey list | get | set <preset> | custom <command>"
+    ;;
+esac
