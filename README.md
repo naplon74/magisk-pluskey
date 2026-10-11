@@ -1,6 +1,19 @@
-# magisk-pluskey
+<div align="center">
+
+<img width="128" height="128" alt="pluskey-icon" src="https://github.com/user-attachments/assets/17f3d404-f86d-4942-8d07-90f4018b94c9" />
+
+# Magisk - Plus Key
+
+
+
+<p>
+  <img src="https://github.com/user-attachments/assets/d038a627-52b2-4eb4-bc0a-bb2c88fd3650" width="240" alt="Actions tab">
+  <img src="https://github.com/user-attachments/assets/4653aa92-0d76-4913-9808-4114a09a7822" width="240" alt="Info tab">
+</p>
 
 A Magisk module that lets you choose what the Plus Key does. Pick a preset (assistant, camera, screenshot, flashlight) or run your own shell command.
+
+</div>
 
 ## Install
 
