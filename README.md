@@ -44,9 +44,11 @@ There is a small app in `app/` with a settings screen and a Quick Settings tile.
 
 | ROM / Devices |       **Nord 5**      | **13a** | **15** | **15R** |
 |:-------------:|:---------------------:|:-------:|:------:|:-------:|
+|   OxygenOS 16 | - | - | - | - |
+|   OxygenOS 15 | - | - | - | - |
 |    crDroid    | ✅ [(12.12 Android 16)](https://crdroid.net/lexus/12) |    -    |    -   |    -    |
 |   LineageOS   |  ✅ [(23.2 Android 16)](https://wiki.lineageos.org/devices/lexus/) |    -    |    -   |    -    |
-|   AlphaDroid  | In test |    -    |    -   |    -    |
+|   AlphaDroid  | ✅ [(4.7 Android 16](https://alphadroid.org/#devices) |    -    |    -   |    -    |
 |   DerpFest    | In test | - | - | - |
 
 
@@ -63,12 +65,6 @@ Module (needs `zip`):
     ./build.sh
 
 This writes `pluskey-<version>.zip` in the repo root.
-
-App (needs JDK 17 or 21 and the Android SDK):
-
-    cd app
-    ./gradlew assembleDebug
-    adb install -r app/build/outputs/apk/debug/app-debug.apk
 
 ## Credits
 
