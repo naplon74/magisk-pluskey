@@ -40,11 +40,15 @@ The change applies on the next key press, no reboot needed.
 There is a small app in `app/` with a settings screen and a Quick Settings tile. It only runs the `pluskey` command above, so the module works fine without it. Build it from source (see below) and install the APK.
 
 
-## Tested on
+## Tested on (WITH MAGISK ROOT)
 
-- OnePlus Nord 5 (CPH2709)
-- crDroid, Android 16
-- Magisk
+| ROM / Devices |       **Nord 5**      | **13a** | **15** | **15R** |
+|:-------------:|:---------------------:|:-------:|:------:|:-------:|
+|    crDroid    | ✅ [(12.12 Android 16)](https://crdroid.net/lexus/12) |    -    |    -   |    -    |
+|   LineageOS   |  ✅ [(23.2 Android 16)](https://wiki.lineageos.org/devices/lexus/) |    -    |    -   |    -    |
+|   AlphaDroid  | In test |    -    |    -   |    -    |
+|   DerpFest    | In test | - | - | - |
+
 
 Other phones and ROMs are untested. The module expects the Plus Key to report `BTN_TRIGGER_HAPPY32` and the key layout to be at `/vendor/usr/keylayout/gpio-keys.kl`.
 
