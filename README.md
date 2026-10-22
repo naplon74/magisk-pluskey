@@ -7,8 +7,9 @@
 
 
 <p>
-  <img src="https://github.com/user-attachments/assets/d038a627-52b2-4eb4-bc0a-bb2c88fd3650" width="240" alt="Actions tab">
-  <img src="https://github.com/user-attachments/assets/4653aa92-0d76-4913-9808-4114a09a7822" width="240" alt="Info tab">
+  <img width="250" alt="Screenshot From 2026-10-22 12-56-25" src="https://github.com/user-attachments/assets/b086e5ef-088e-4f8e-87bb-2ba17b9cc998" />
+  <img width="250" alt="Screenshot From 2026-10-22 12-56-32" src="https://github.com/user-attachments/assets/6ab6f51b-f158-4594-9137-6417a2a3734e" />
+  <img width="250" alt="Screenshot From 2026-10-22 12-56-41" src="https://github.com/user-attachments/assets/85c5083a-8f8c-4ba5-95a8-b89e35ee81b8" />
 </p>
 
 A Magisk module that lets you choose what the Plus Key does. Pick a preset (assistant, camera, screenshot, flashlight) or run your own shell command.
