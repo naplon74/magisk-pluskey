@@ -13,3 +13,9 @@ done
 [ -z "$next" ] && next=$first
 echo "$next" > "$CONF/choice"
 echo "Plus Key action: $next"
+echo "--------------------------------"
+echo "Please use the companion app for this module."
+echo "https://github.com/naplon74/magisk-pluskey/releases and download the .apk file."
+echo "--------------------------------"
+echo "PlusKey Magisk module v0.2 by naplon74"
+echo "https://github.com/naplon74/magisk-pluskey/ | https://naplon.xyz | naplon_ on discord" 

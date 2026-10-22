@@ -42,17 +42,20 @@ There is a small app in `app/` with a settings screen and a Quick Settings tile.
 
 ## Tested on (WITH MAGISK ROOT)
 
-| ROM / Devices |       **Nord 5**      | **13a** | **15** | **15R** |
-|:-------------:|:---------------------:|:-------:|:------:|:-------:|
-|   OxygenOS 16 | - | - | - | - |
-|   OxygenOS 15 | - | - | - | - |
-|    crDroid    | ✅ [(12.12 Android 16)](https://crdroid.net/lexus/12) |    -    |    -   |    -    |
-|   LineageOS   |  ✅ [(23.2 Android 16)](https://wiki.lineageos.org/devices/lexus/) |    -    |    -   |    -    |
-|   AlphaDroid  | ✅ [(4.7 Android 16](https://alphadroid.org/#devices) |    -    |    -   |    -    |
-|   DerpFest    | In test | - | - | - |
+| ROM / Devices |       **Nord 5**      | **13a** | **15** | **15R** | **Oppo Devices** |
+|:-------------:|:---------------------:|:-------:|:------:|:-------:|:-------:|
+|   OxygenOS 16 | - | - | - | - | - |
+|   OxygenOS 15 | - | - | - | - | - |
+|    crDroid    | ✅ [(12.12 Android 16)](https://crdroid.net/lexus/12) | - | - | - | - |
+|   LineageOS   |  ✅ [(23.2 Android 16)](https://wiki.lineageos.org/devices/lexus/) | - | - | - | - |
+|   AlphaDroid  | ✅ [(4.7 Android 16](https://alphadroid.org/#devices) | - | - | - | - |
+|   DerpFest    | ✅ [16.2 Android 16](https://derpfest.org/devices?s=lexus) | - | - | - | - |
 
 
 Other phones and ROMs are untested. The module expects the Plus Key to report `BTN_TRIGGER_HAPPY32` and the key layout to be at `/vendor/usr/keylayout/gpio-keys.kl`.
+
+>[!NOTE]
+> I have no idea if this module would work on Oppo devices? If you any Oppo devices / OnePlus with the plus key let me know (naplon_ on discord).
 
 ## How it works
 
